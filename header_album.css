@@ -1,0 +1,117 @@
+/* Grundläggande styling för headern */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling för huvud-header */
+header.main-header {
+    background: url('collections_image/heading\ till\ Vickygalleria_edited_edited.png') no-repeat center center/cover;
+    color: #fff; /* Vit textfärg */
+    padding: 50px 0; /* Vertikal padding för headern */
+}
+
+/* Styling för header-container */
+header.main-header .container {
+    display: flex; /* Flexbox layout för barn-element */
+    justify-content: space-between; /* Mellanrum mellan logo och andra element */
+    align-items: center; /* Centrerar element vertikalt */
+    width: 90%; /* Begränsad bredd för att hålla innehållet centrerat */
+    margin: auto; /* Centrerar container */
+}
+
+/* Styling för logotyp */
+.logo {
+    display: flex; /* Flexbox layout för logoelement */
+    align-items: center; /* Centrerar logoelement vertikalt */
+    justify-content: flex-start; /* Justerar logoelement till vänster */
+    margin-left: 0; /* Ingen extra marginal */
+}
+
+.logo-img {
+    width: 60px; /* Bredd på logotypbild */
+    height: 60px; /* Höjd på logotypbild */
+    border-radius: 50%; /* Rundar hörnen på logotypen */
+    margin-right: 10px; /* Mellanrum mellan bild och text */
+}
+
+.logo-name {
+    color: #fff; /* Vit textfärg för logotexten */
+    text-decoration: none; /* Ingen understrykning */
+    font-size: 20px; /* Textstorlek */
+    font-weight: bold; /* Fetstil */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font-familj */
+}
+
+/* Styling för sökfält och språkväljare */
+.search-translate {
+    display: flex; /* Flexbox layout för sökfält och språkväljare */
+    align-items: center; /* Centrerar elementen vertikalt */
+    gap: 15px; /* Avstånd mellan element */
+}
+
+.search-bar {
+    padding: 8px; /* Inre marginal för sökfältet */
+    border: none; /* Ingen kantlinje */
+    border-radius: 10px; /* Rundar hörnen */
+    font-size: 1em; /* Textstorlek */
+    width: 200px; /* Bredd för sökfältet */
+}
+
+.language-selector {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 20px; /* Avstånd ovanför navigeringen */
+}
+
+.nav-links {
+    list-style: none; /* Ingen punktlista */
+    display: flex; /* Flexbox layout för länkarna */
+    justify-content: center; /* Centrerar länkarna */
+    gap: 20px; /* Avstånd mellan länkarna */
+    padding: 0; /* Ingen extra padding */
+}
+
+.nav-links li a {
+    color: #fff; /* Vit textfärg för länkar */
+    text-decoration: none; /* Ingen understrykning */
+    padding: 10px 20px; /* Inre marginal för länkar */
+    font-size: 1em; /* Textstorlek */
+    border-radius: 5px; /* Rundar hörnen */
+    transition: background-color 0.3s, transform 0.3s; /* Övergångar för hover-effekter */
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ljus bakgrund vid hover */
+    transform: scale(1.1); /* Skalar upp länken vid hover */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    header.main-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-translate {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}

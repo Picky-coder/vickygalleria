@@ -1,0 +1,28 @@
+/* Grundläggande styling för fotern */
+.footer {
+    background-color: #000; /* Svart bakgrund */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1px, rgba(0, 0, 0, 1) 1px); /* Glittereffekt */
+    background-size: 8px 8px; /*storleken på glittrandet */
+    color: #fff; /* Vit text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom {
+    border-top: 1px solid #666; /* Ljusa upp linjen */
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #ccc; /* Ljusa upp texten */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Ger en ljusare effekt */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0; /* Mindre padding för små skärmar */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Mindre textstorlek */
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilith project</title>
+    <!-- Länk till den globala header-stilen -->
+    <link rel="stylesheet" href="header_album.css">
+    <!-- Länk till album-specifika stilar -->
+    <link rel="stylesheet" href="album_styles.css">
+    <!-- Länk till album-specifika stilar -->
+    <link rel="stylesheet" href="album_fotter.css">
+    <link rel="stylesheet" href="modal_styles.css">
+    <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+    </style>
+</head>
+
+<body>
+        <!-- Huvud-header som används på alla sidor -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="collections_image/album_logo.jpg" alt="Logo" class="logo-img">
+                <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson </a>
+            </div>
+
+         <!-- Sökfält och Google Translate språkval -->
+         <div class="search-translate">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Container för hela sidan -->
+    <main class="collection-container">
+        <!-- Titel för kollektionen -->
+        <header class="collection-header">
+            <h1>"Lilith" from "The Holy Witch in the Iron Mask"</h1>
+            <h3>Project type: Character design</h3>
+            <p class="collection-description">Introducing to one of my work, Character Design. 
+                This artwork showcases a collection of unique and original characters inspired by a novel written by myself. 
+                Check out my portfolio to see the creative and imaginative work that went into bringing these characters to life.
+            </p>
+        </header>
+
+        <!-- Galleri av kollektionsbilder -->
+        <section class="collection-gallery">
+            <!-- Individuella kort för varje objekt i kollektionen -->
+            <article class="gallery-item">
+                <img src="collections_image/lilith (1).png" alt="Artwork of Lilith, protagonist of The Holy Witch in the Iron Mask." onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">"Lilith" from "The Holy Witch in the Iron Mask."</h2>
+                <p class="item-description">
+                    This character, named Lilith, is the main protagonist of my novel. She embodies a beauty cursed by the creator god. 
+                    I designed her to retain a breathtaking appearance that reflects her divine origins—transcendent above humans, 
+                    yet still bearing a resemblance to humanity.</p>
+            </article>
+
+            <div class="gallery-item">
+                <img src="collections_image/lilith (2).png" alt="Lilith 2" onerror="this.src='collections_image/default-image-png';">
+                <h2 class="item-title">Lilith in Another Masked Version with angelwings</h2>
+                <p class="item-description">
+                    I actually designed several versions of her wearing a mask, 
+                    but I believe two of them suit her best in this post. This post is a bit special. 
+                    The wings remain as a reminder that she is somehow connected to the creation gods.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="collections_image/lilith (3).png" alt="Lilith 3" onerror="this.src='collections_image/default-image-png';">
+                <h2 class="item-title">Lilith in the side post without masked</h2>
+                <p class="item-description">
+                    When I created this image, I started from the concept of reflecting a beauty that sparks human greed 
+                    and a desire to possess it—one of the key elements driving the conflict in my novel.</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="collections_image/lilith (4).png" alt="Lilith 4" onerror="this.src='collections_image/default-image-png';">
+                <h2 class="item-title">Lilith without a mask in another post.</h2>
+                <p class="item-description">
+                    To create this image, I used AI to assist with editing and to maintain the appearance of the face as in the previous image. 
+                    However, working with AI isn't always easy. To achieve the desired result, I had to spend a lot of time experimenting 
+                    and making mistakes until I finally got an image and perspective that closely matched what I had envisioned.</p>
+            </div>
+            
+           
+
+            <!-- Lägg till fler objekt efter behov -->
+        </section>
+    </main>
+
+    <!-- Footer börjar -->
+        <!-- HTML för footer på album-sidan -->
+<footer class="album-footer">
+    <!-- Kontaktinformation -->
+    <div class="contact-info">
+        <p>Contact us:</p>
+        <ul>
+            <li><a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gmail.com</a></li>
+            <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+        </ul>
+    </div>
+
+    <!-- Copyright-information -->
+    <div class="copyright">
+        <p>&copy; 2025 Vickygalleria. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- Footer slutar -->
+
+    <!-- Länk till JavaScript-fil för interaktivitet -->
+    <script src="album_scripts.js"></script>
+    <script src="modal_script.js"></script>
+    <script src="album_search.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Project</title>
+    <!-- Länk till den globala header-stilen -->
+    <link rel="stylesheet" href="header_album.css">
+    <!-- Länk till album-specifika stilar -->
+    <link rel="stylesheet" href="album_styles.css">
+    <!-- Länk till album-specifika stilar -->
+    <link rel="stylesheet" href="album_fotter.css">
+    <link rel="stylesheet" href="modal_styles.css">
+
+    <!-- Internal CSS för sid-specifika justeringar -->
+    <style>
+        /* Justeringar för Stickers-galleriet */
+        .collection-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .collection-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+
+            .gallery-item img {
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Huvud-header som används på alla sidor -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="collections_image/album_logo.jpg" alt="Logo" class="logo-img">
+                <a href="/index.html" class="logo-name">VickyGalleria by Vimolman Nilsson</a>
+            </div>
+            <!-- Sökfält och språkval dropdown -->
+            <div class="search-translate">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <select id="language-selector" class="language-selector">
+                    <option value="en">English</option>
+                    <option value="sv">Svenska</option>
+                    <option value="th">ไทย</option>
+                </select>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Work</a></li>
+                <li><a href="/aboutme.html">About me</a></li>
+                <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Container för hela sidan -->
+    <main class="collection-container">
+        <!-- Titel för kollektionen -->
+        <header class="collection-header">
+            <h1>Stickers</h1>
+            <h3>Project type: Graphic Design</h3>
+            <p class="collection-description">
+                I drew characters from translations and depicted them in cute, cartoon-like poses and with various emotions. 
+                Let's see which manga or manhwa they are from.
+            </p>
+        </header>
+
+        <!-- Galleri av kollektionsbilder -->
+        <section class="collection-gallery">
+            <!-- Individuella kort för varje objekt i kollektionen -->
+            <article class="gallery-item">
+                <img src="collections_image/sticker 1.png" alt="Sticker 1" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Leoniar is feeling shy</h2>
+                <p class="item-description">
+                    This is my favorite character from the manhwa titled "I Became the Male Lead’s Adopted Daughter." 
+                    Her name is Leoniar Boleoti, the adopted daughter of Philio Boleoti, the grand duke of the Boleoti duchy. 
+                    I absolutely adore her for all her cute and endearing reactions, which have been a big inspiration for this project.
+                </p>
+            </article>
+
+            <article class="gallery-item">
+                <img src="collections_image/sticker 2.png" alt="Sticker 2" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Leoniar is thinking</h2>
+                <p class="item-description">
+                    In fact, she has a thoughtful personality because she retains memories from her previous life as an adult. 
+                    I find her thoughtfulness incredibly endearing and cute.
+                </p>
+            </article>
+
+            <article class="gallery-item">
+                <img src="collections_image/sticker 3.png" alt="Sticker 3" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Leoniar is deep in thought, imagining something wonderful</h2>
+                <p class="item-description">
+                    The manhwa features many scenes where she has moments of realization, like 'Ahhh, 
+                    I finally figured it out!' I absolutely love it when she shows this reaction.
+                </p>
+            </article>
+
+            <article class="gallery-item">
+                <img src="collections_image/sticker 4.png" alt="Sticker 4" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Leoniar is showing a resigned expression</h2>
+                <p class="item-description">
+                    One of her charms is her ability to accept reality and let it take its course without dwelling on the past.
+                </p>
+            </article>
+
+            <article class="gallery-item">
+                <img src="collections_image/sticker 5.png" alt="Sticker 5" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Oops! Version</h2>
+                <p class="item-description">
+                    Perhaps because she retains memories from her past life as an adult, whenever she does something wrong 
+                    or is caught off guard, she reacts like this.
+                </p>
+            </article>
+
+            <article class="gallery-item">
+                <img src="collections_image/sticker6.png" alt="Sticker 6" onerror="this.src='collections_image/default-image.png';">
+                <h2 class="item-title">Leoniar is trying to hide her wrongdoing with her joy</h2>
+                <p class="item-description">
+                    I love how she often unintentionally behaves in ways a typical six-year-old wouldn’t, due to her memories from her adult life. 
+                    There are so many delightful scenes where she tries to mask her joy after accidentally doing something uncharacteristic of a child.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer börjar -->
+    <footer class="album-footer">
+        <!-- Kontaktinformation -->
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <ul>
+                <li><a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gmail.com</a></li>
+                <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            </ul>
+        </div>
+
+        <!-- Copyright-information -->
+        <div class="copyright">
+            <p>&copy; 2025 VickyGalleria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Länk till JavaScript-fil för interaktivitet -->
+    <script src="album_scripts.js"></script>
+    <script src="modal_script.js"></script>
+    <script src="album_search.js"></script>
+</body>
+</html>

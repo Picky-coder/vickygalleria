@@ -1,0 +1,46 @@
+/* Grundläggande styling för footer på album-sidan */
+.album-footer {
+    background: linear-gradient(to right, #000, #555); /* Svart bakgrund med silver-glittereffekt */
+    color: #fff; /* Vit textfärg */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling för kontaktinformationen */
+.album-footer .contact-info {
+    margin-bottom: 20px;
+}
+
+.album-footer .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff; /* Vit textfärg */
+}
+
+.album-footer .contact-info ul {
+    list-style: none; /* Ingen punktlista */
+    padding: 0;
+    margin: 0;
+}
+
+.album-footer .contact-info ul li {
+    margin: 5px 0; /* Mellanrum mellan kontaktlänkar */
+}
+
+.album-footer .contact-info ul li a {
+    color: #fff; /* Vit textfärg för länkar */
+    text-decoration: none; /* Ingen understrykning */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Övergångseffekt vid hover */
+}
+
+.album-footer .contact-info ul li a:hover {
+    color: #ccc; /* Ljusare färg vid hover */
+}
+
+/* Styling för copyright-information */
+.album-footer .copyright {
+    font-size: 0.9rem;
+    color: #ccc; /* Ljusare text för copyright */
+}

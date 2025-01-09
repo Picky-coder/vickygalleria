@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VickyGalleria</title>
+
+    <!-- Länkar till CSS-filer -->
+    <link rel="stylesheet" href="header1.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section börjar -->
+    <header>
+        <div class="container">
+            <!-- Logo med bild och namn -->
+            <div class="logo">
+                <img src="images/logo_image.jpg" alt="VickyGalleria Logo" class="logo-img">
+                <a href="#" class="logo-name">VickyGalleria by Vimolman J.Nilsson</a>
+            </div>
+
+            <!-- Sökfält och Google Translate språkval -->
+            <div class="search-translate">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+
+        <!-- Navigation börjar -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="https://www.instagram.com/?variant=following" target="_blank">Instagram</a></li>
+                <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog">Blog</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation slutar -->
+    </header>
+    <!-- Header section slutar -->
+
+    <!-- Galleri huvudsektion -->
+    <main>
+        <section id="gallery">
+            <h2 class="gallery-title">My artworks</h2>
+            <p class="gallery-description">Welcome to VickyGalleria. Here you'll find a selection of my artworks. <br> Explore my projects to learn more about what I do.</p>
+            <div class="image-grid">
+
+                <!-- Bild 1 -->
+                <div class="image-item">
+                    <a href="pinky_pigs.html">
+                        <img src="images/smiley_pinky_pig_fsid.png" alt="Smiley Pinky Pig Collection" class="gallery-img">
+                    </a>
+                    <p class="image-caption">Smiley Pinky Pig Collection <br>Project type: Character design <br></p> 
+                </div>
+
+                <!-- Bild 2 -->
+                <div class="image-item">
+                    <a href="lilith_project.html">
+                        <img src="images/lilith_fsid.jpg" alt="Lilith project" class="gallery-img">
+                    </a>
+                    <p class="image-caption">"Lilith" from "The Holy Witch in the Iron Mask" <br>Project type: Character design <br></p>
+                </div>
+
+                <!-- Bild 3 -->
+                <div class="image-item">
+                    <a href="panpan_project.html">
+                        <img src="images/panpan_fsid.jpg" alt="PanPan project" class="gallery-img">
+                    </a>
+                    <p class="image-caption">Logotype design: PAN PAN Project <br>Project type: Logotype design<br></p>
+                </div>
+
+                <!-- Bild 4 -->
+                <div class="image-item">
+                    <a href="lotus_pond.html">
+                        <img src="images/lotus_fsid.jpg" alt="Lotus project" class="gallery-img">
+                    </a>
+                    <p class="image-caption">Lotus pond <br>Project type: Pattern art</p>
+                </div>
+
+                <!-- Bild 5 -->
+                <div class="image-item">
+                    <a href="sticker.html">
+                        <img src="images/sicker_fsid.jpg" alt="Stickers project" class="gallery-img">
+                    </a>
+                    <p class="image-caption">Stickers <br>Project type: Grafik design<br></p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer börjar -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 VickyGalleria. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer slutar -->
+
+    <!-- Länka till JavaScript-fil -->
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+    <script src="search.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

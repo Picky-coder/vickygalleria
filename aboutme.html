@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=V, initial-scale=1.0">
+    <title>VickyGalleria-About_me</title>
+
+    <!-- Länkar till CSS-filer -->
+    <link rel="stylesheet" href="header1.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="about_me.css">
+    <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section börjar -->
+    <header>
+    <div class="container">
+        <!-- Logo med bild och namn -->
+        <div class="logo">
+            <img src="images/logo_image.jpg" alt="VickyGalleria Logo" class="logo-img">
+            <a href="index.html" class="logo-name">VickyGalleria by Vimolman J.Nilsson</a>
+        </div>
+
+         <!-- Sökfält och Google Translate språkval -->
+         <div class="search-translate">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+
+    <!-- Navigation börjar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="https://www.instagram.com/?variant=following" target="_blank">Instagram</a></li>
+            <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog">Blog</a></li>     
+        </ul>
+    </nav>
+    <!-- Navigation slutar -->
+</header>
+<!-- Header section slutar -->
+
+
+
+<!-- Main Section -->
+<main>
+    <section class="about-section">
+        <div class="left-title">
+            <h1>About Me</h1> <!-- Main title of the page -->
+        </div>
+
+        <!-- Center Text Column -->
+        <div class="text-column">
+            
+                <h2>Hello, </h2>
+                <p><!-- Introduction paragraph -->
+                My name is Vimolman Nilsson, and I am an illustrator and Manga and Manhwa translator. Welcome to my portfolio website! 
+                I created this space to share my creative vision and showcase my work. I have gained experience in various creative fields, 
+                including writing novels, translating manga and manhwa, and working in animation. These experiences have inspired me to explore and develop my artistic skills. <br><br>
+
+​                    I began teaching myself how to draw, starting with sketches and progressing to painting on canvas. With advancements in digital drawing technology, 
+                I became intrigued by the idea of bringing my imagined characters to life visually, rather than relying solely on text descriptions. 
+                This curiosity led me to study character design, beginning with illustrations for stickers and logos. <br><br>
+
+​                    My designs primarily focus on characters, often accompanied by backstories that give them depth and personality. 
+                However, I also enjoy creating standalone illustrations, such as floral compositions and abstract figures, which are often influenced by my mood.
+            </p> 
+            <p><!-- text to action for contact -->
+                Feel free to connect with me through the contact details below.
+            </p> 
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h1>Contact</h1>
+                <p>Email: <a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gamil.com</a></p> 
+                <a href="https://www.instagram.com/vickygalleria/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="right-image">
+            <img src="images/about_me_sid.jpg" alt="Vimolman Nilsson, an illustrator and translator"> 
+        </div>
+    </section>
+</main>
+    
+    
+    
+    <!-- Footer börjar -->
+<footer class="footer">
+    <!-- Copyright-rad -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 VickyGalleria. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- Footer slutar -->
+
+
+ <!-- Länka till JavaScript-fil -->
+ <script src="script.js"></script>
+ <script src="gallery.js"></script>
+ <script src="search_test.js"></script>
+ <script type="text/javascript">
+     function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+     }
+ </script>
+ <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

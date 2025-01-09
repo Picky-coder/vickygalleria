@@ -1,0 +1,100 @@
+/* General Reset */
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+/* About Section Layout */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* Left Title */
+.left-title {
+    flex: 1;
+    max-width: 25%;
+    text-align: left;
+}
+
+.left-title h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Center Text Column */
+.text-column {
+    flex: 2;
+    max-width: 50%;
+    margin: 0 5%;
+}
+
+.text-column p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    
+}
+
+.contact-info a {
+    font-size: 1rem;
+    color: #fff; /* White text for link */
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-info a:hover {
+    color: #ccc; /* Ljusare färg vid hover */
+    text-decoration: underline;
+}
+
+/* Right Image */
+.right-image {
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+}
+
+.right-image img {
+    width: 100%; /* Bilden fyller hela bredden av dess container */
+    max-width: 1000px; /* Begränsar bredden för att förhindra att den blir för stor */
+    height: 800px; /* Fixerad höjd för att matcha textkolumnens höjd */
+    border-radius: 15px; /* Rundade hörn */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Subtil skugga */
+}
+
+/* Media query för mindre skärmar */
+@media (max-width: 768px) {
+    .right-image img {
+        height: auto; /* Proportionell höjd på små skärmar */
+        max-width: 90%; /* Gör att bilden inte tar upp hela skärmen */
+        margin: 0 auto; /* Centrerar bilden på små skärmar */
+    }
+}
+
