@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotus_pond_project</title>
+    <title>"Lotuspond"- Grafikdesign|VickyGalleria</title>
     <!-- Länk till den globala header-stilen -->
     <link rel="stylesheet" href="header_album.css">
     <!-- Länk till album-specifika stilar -->
@@ -11,6 +11,25 @@
     <!-- Länk till album-specifika stilar -->
     <link rel="stylesheet" href="album_fotter.css">
     <link rel="stylesheet" href="modal_styles.css">
+    <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+    </style>
 </head>
 
 <body>
@@ -18,20 +37,17 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <img src="collections_image/album_logo.jpg" alt="Logo" class="logo-img">
+                <img src="images/album_logo.jpg" alt="Logo" class="logo-img">
                 <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson </a>
             </div>
 
-          <!-- Sökfält och språkval dropdown -->
-<div class="search-translate">
-    <input type="text" placeholder="Search..." class="search-bar">
-    <select id="language-selector" class="language-selector">
-        <option value="en">English</option>
-        <option value="sv">Svenska</option>
-        <option value="th">ไทย</option>
-    </select>
-</div>
+        <!-- Sökfält och Google Translate språkval -->
+        <div class="search-translate">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <div id="google_translate_element"></div>
         </div>
+    </div>
+
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Work</a></li>
@@ -51,7 +67,7 @@
             <p class="collection-description">
                 The images in this project are mostly inspired by my emotions at the time of their creation. 
                 Unlike my character designs, these images do not have specific stories behind them. 
-                Instead, they reflect my feelings and creative expression in the moment. Let’s explore the images I’ve created!
+                Instead, they reflect my feelings and creative expression in the moment. Let's explore the images I've created!
             </p>
         </header>
 
@@ -59,7 +75,7 @@
         <section class="collection-gallery">
             <!-- Individuella kort för varje objekt i kollektionen -->
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (1).png" alt="Lotuspond 1" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond1.png" alt="Lotuspond 1" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 1</h2>
                 <p class="item-description">
                     The Lotus Pond project represents my favorite type of flower and embodies a sense of calm and focus that I cherish. 
@@ -68,7 +84,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (2).png" alt="Lotuspond 2" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond2.png" alt="Lotuspond 2" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 2</h2>
                 <p class="item-description">
                     Whenever I show my acrylic paintings to others, I'm often asked why I enjoy painting lotus flowers. 
@@ -77,7 +93,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (3).png" alt="Lotuspond 3" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond3.png" alt="Lotuspond 3" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 3</h2>
                 <p class="item-description">
                     Even when I try to draw a single lotus flower, it always feels off in a way I can't quite explain. 
@@ -86,7 +102,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (4).png" alt="Lotuspond 4" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond4.png" alt="Lotuspond 4" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 4</h2>
                 <p class="item-description">
                     Someone once asked me if I often visit lotus ponds. The answer is no—not even once. 
@@ -96,7 +112,7 @@
             </article>
             
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (5).png" alt="Lotuspond 5" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond5.png" alt="Lotuspond 5" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 5</h2>
                 <p class="item-description">
                     This pattern design is self-taught, inspired by the lotus flower. 
@@ -104,7 +120,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/lotuspond (6).png" alt="Lotuspond 6" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/lotuspond6.png" alt="Lotuspond 6" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Lotuspond 6</h2>
                 <p class="item-description">
                     I believe the lotus pond image is perfect for practicing pattern art design. 
@@ -138,5 +154,11 @@
     <script src="album_scripts.js"></script>
     <script src="modal_script.js"></script>
     <script src="album_search.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

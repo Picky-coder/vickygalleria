@@ -7,7 +7,7 @@ body {
 
 /* Styling för huvud-header */
 header.main-header {
-    background: url('collections_image/heading\ till\ Vickygalleria_edited_edited.png') no-repeat center center/cover;
+    background: url('images/heading\ till\ Vickygalleria_collection.png') no-repeat center center/cover;
     color: #fff; /* Vit textfärg */
     padding: 50px 0; /* Vertikal padding för headern */
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PanPan project</title>
+    <title>"PanPan project"-Logotype design|VickyGalleria</title>
     <!-- Länk till den globala header-stilen -->
     <link rel="stylesheet" href="header_album.css">
     <!-- Länk till album-specifika stilar -->
@@ -11,6 +11,41 @@
     <!-- Länk till album-specifika stilar -->
     <link rel="stylesheet" href="album_fotter.css">
     <link rel="stylesheet" href="modal_styles.css">
+    <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+
+          /* Responsiv design för PanPan-sidan */
+          @media (max-width: 768px) {
+            .panpan-gallery .gallery-item {
+                flex-basis: 100%; /* Gör galleriobjekten 100% breda */
+                margin-bottom: 20px; /* Lägg till avstånd mellan objekten */
+            }
+
+            .panpan-gallery .item-title {
+                font-size: 1rem; /* Anpassad storlek på titeln */
+            }
+
+            .panpan-gallery .item-description {
+                font-size: 0.9rem; /* Anpassad textstorlek för beskrivning */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -18,25 +53,21 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <img src="collections_image/album_logo.jpg" alt="Logo" class="logo-img">
-                <a href="/index.html" class="logo-name">VickyGalleria by Vimolman Nilsson </a>
+                <img src="images/album_logo.jpg" alt="Logo" class="logo-img">
+                <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson </a>
             </div>
 
-         <!-- Sökfält och språkval dropdown -->
-         <div class="search-translate">
+         <!-- Sökfält och Google Translate språkval -->
+        <div class="search-translate">
             <input type="text" placeholder="Search..." class="search-bar">
-            <select id="language-selector" class="language-selector">
-                <option value="en">English</option>
-                <option value="sv">Svenska</option>
-                <option value="th">ไทย</option>
-            </select>
+            <div id="google_translate_element"></div>
         </div>
-        </div>
+    </div>
 
         <nav>
            <ul class="nav-links">
-                <li><a href="/index.html">Work</a></li>
-                <li><a href="/aboutme.html">About me</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="aboutme.html">About me</a></li>
                 <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
             </ul>
@@ -47,7 +78,7 @@
     <main class="collection-container">
         <!-- Titel för kollektionen -->
         <header class="collection-header">
-            <h1>Logotype design : PAN PAN Project</h1>
+            <h1>PanPan Project</h1>
             <h3>Project type: Logotype design</h3>
             <p class="collection-description">PAN PAN is the name of my imaginary café shop project. 
                 I designed this series of logotypes as part of a collection under the PAN PAN concept. 
@@ -56,10 +87,10 @@
         </header>
 
         <!-- Galleri av kollektionsbilder -->
-        <section class="collection-gallery">
+        <section class="collection-gallery panpan-gallery">
             <!-- Individuella kort för varje objekt i kollektionen -->
             <article class="gallery-item">
-                <img src="collections_image/pappan 1.png" alt="PanPan 1" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan1.png" alt="The bread on top" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">The bread on top</h2>
                 <p class="item-description">
                     This is the first image I created from my sketches after imagining owning a coffee shop. 
@@ -67,7 +98,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/pappan 2.png" alt="PanPan 2" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan2.png" alt="A pretty cup" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">A pretty cup</h2>
                 <p class="item-description">
                     This image was brought to life entirely in vector format, combining the tools of Adobe Illustrator and Ibis Paint. 
@@ -78,7 +109,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/pappan 3.png" alt="PanPan 3" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan3.png" alt="Pan Pan Project" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Pan Pan Project</h2>
                 <p class="item-description">
                     PanPan is a name inspired by the Japanese word for bread, 'パン' (pan), reflecting my dream of owning a coffee shop. 
@@ -87,7 +118,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/pappan 4.png" alt="PanPan 4" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan4.png" alt="PanPan in another version" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in another version</h2>
                 <p class="item-description">
                     I have a deep fondness for Japanese culture, which greatly inspired the PanPan project. 
@@ -96,7 +127,7 @@
             </article>
             
             <article class="gallery-item">
-                <img src="collections_image/pappan 5.png" alt="PanPan 5" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan5.png" alt="PanPan in rabbit version" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in rabbit version</h2>
                 <p class="item-description">
                     This version was inspired by an animation about a white talking bear who owned a coffee shop in the North Pole. 
@@ -107,7 +138,7 @@
             </article>
 
             <article class="gallery-item">
-                <img src="collections_image/pappan 6.png" alt="PanPan 6" onerror="this.src='collections_image/default-image.png';">
+                <img src="images/pappan6.png" alt="PanPan in Different Versions" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in Different Versions:</h2>
                 <p class="item-description">
                     This picture marks the starting point of the PanPan project. When I imagined a cartoon featuring a cute, 
@@ -141,5 +172,11 @@
     <script src="album_scripts.js"></script>
     <script src="modal_script.js"></script>
     <script src="album_search.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
