@@ -143,41 +143,48 @@
 <!-- Google Translate Widget -->
 <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en', // กำหนดให้ภาษาหลักของเว็บไซต์เป็นภาษาอังกฤษ
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- Scripts Google translate funktion-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,th,sv'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function restrictLanguages() {
+            const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
+            const allowedLanguages = ['English', 'Swedish', 'Thai'];
 
-<!-- Script to fix language select and limit languages -->
-<script>
-    function restrictLanguages() {
-        const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
-        const allowedLanguages = ['English', 'Swedish', 'Thai']; // ภาษาที่อนุญาตให้เลือก
+            languageOptions.forEach(option => {
+                const languageText = option.innerText || option.textContent;
+                if (!allowedLanguages.includes(languageText)) {
+                    option.closest('.goog-te-menu2-item').style.display = 'none';
+                }
+            });
 
-        languageOptions.forEach(option => {
-            const languageText = option.innerText || option.textContent;
-            if (!allowedLanguages.includes(languageText)) {
-                option.closest('.goog-te-menu2-item').style.display = 'none'; // ซ่อนภาษาอื่น
+            const selectBar = document.querySelector('.goog-te-combo');
+            if (selectBar) {
+                selectBar.setAttribute('lang', 'en');
             }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                restrictLanguages();
+                forceLanguageToEnglish(); // foce for language 
+            }, 1500);
         });
 
-        // แก้ไขให้แถบเมนูอยู่เป็นภาษาอังกฤษเสมอ
-        const selectBar = document.querySelector('.goog-te-combo');
-        if (selectBar) {
-            selectBar.setAttribute('lang', 'en'); // กำหนดแถบเมนูเป็นภาษาอังกฤษ
+        function forceLanguageToEnglish() {
+            const selectBar = document.querySelector('.goog-te-combo');
+            if (selectBar) {
+                selectBar.setAttribute('lang', 'en');
+            }
         }
-    }
-
-    // รันฟังก์ชันหลังจาก widget โหลดเสร็จ
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(restrictLanguages, 1000); // รอให้ widget โหลดเสร็จก่อน
-    });
-</script>
+    </script>
 
 
 
