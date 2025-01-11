@@ -144,7 +144,7 @@
 <div id="google_translate_element"></div>
 
 <!-- Google Translate Widget -->
-   <script type="text/javascript">
+<script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
             pageLanguage: 'en',
@@ -158,6 +158,12 @@
         const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
         const allowedLanguages = ['English', 'Swedish', 'Thai'];
 
+        if (languageOptions.length === 0) {
+            console.warn("Dropdown elements not loaded yet. Retrying...");
+            setTimeout(restrictLanguages, 500); // Försök igen efter 500ms
+            return;
+        }
+
         languageOptions.forEach(option => {
             const languageText = option.innerText || option.textContent;
             if (!allowedLanguages.includes(languageText)) {
@@ -167,7 +173,7 @@
 
         const selectBar = document.querySelector('.goog-te-combo');
         if (selectBar) {
-            selectBar.value = 'en'; // Force language to English
+            selectBar.value = 'en'; // Tvinga språkmenyn till engelska
             const event = new Event('change');
             selectBar.dispatchEvent(event);
         }
@@ -176,9 +182,10 @@
     document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             restrictLanguages();
-        }, 1500); // loading widget
+        }, 1500); // Vänta tills widgeten är helt laddad
     });
 </script>
+
 
 
 </body>
