@@ -144,39 +144,41 @@
 <div id="google_translate_element"></div>
 
 <!-- Google Translate Widget -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,th,sv'
-            }, 'google_translate_element');
-        }
-    </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-        function restrictLanguages() {
-            const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
-            const allowedLanguages = ['English', 'Swedish', 'Thai'];
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,th,sv'
+        }, 'google_translate_element');
+    }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    function restrictLanguages() {
+        const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
+        const allowedLanguages = ['English', 'Swedish', 'Thai'];
 
-            languageOptions.forEach(option => {
-                const languageText = option.innerText || option.textContent;
-                if (!allowedLanguages.includes(languageText)) {
-                    option.closest('.goog-te-menu2-item').style.display = 'none';
-                }
-            });
-
-            const selectBar = document.querySelector('.goog-te-combo');
-            if (selectBar) {
-                selectBar.setAttribute('lang', 'en'); // foce language 
+        languageOptions.forEach(option => {
+            const languageText = option.innerText || option.textContent;
+            if (!allowedLanguages.includes(languageText)) {
+                option.closest('.goog-te-menu2-item').style.display = 'none';
             }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                restrictLanguages();
-            }, 1500); // loading widget
         });
-    </script>
+
+        const selectBar = document.querySelector('.goog-te-combo');
+        if (selectBar) {
+            selectBar.value = 'en'; // Force language to English
+            const event = new Event('change');
+            selectBar.dispatchEvent(event);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            restrictLanguages();
+        }, 1500); // loading widget
+    });
+</script>
 
 
 </body>
