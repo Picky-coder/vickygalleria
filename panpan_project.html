@@ -30,8 +30,23 @@
             gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
         }
 
-          /* Responsiv design för PanPan-sidan */
-          @media (max-width: 768px) {
+        /* ซ่อนโลโก้ Google Translate */
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        /* ซ่อน footer ของ widget */
+        .goog-te-gadget {
+            font-size: 0 !important;
+        }
+
+        /* ปรับแต่งขนาดของแถบเมนู */
+        #google_translate_element {
+            margin-top: 10px;
+        }
+
+        /* Responsiv design för PanPan-sidan */
+        @media (max-width: 768px) {
             .panpan-gallery .gallery-item {
                 flex-basis: 100%; /* Gör galleriobjekten 100% breda */
                 margin-bottom: 20px; /* Lägg till avstånd mellan objekten */
@@ -49,23 +64,23 @@
 </head>
 
 <body>
-        <!-- Huvud-header som används på alla sidor -->
+    <!-- Huvud-header som används på alla sidor -->
     <header class="main-header">
         <div class="container">
             <div class="logo">
                 <img src="images/album_logo.jpg" alt="Logo" class="logo-img">
-                <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson </a>
+                <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson</a>
             </div>
 
-         <!-- Sökfält och Google Translate språkval -->
-        <div class="search-translate">
-            <input type="text" placeholder="Search..." class="search-bar">
-            <div id="google_translate_element"></div>
+            <!-- Sökfält och Google Translate språkval -->
+            <div class="search-translate">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <div id="google_translate_element"></div>
+            </div>
         </div>
-    </div>
 
         <nav>
-           <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="aboutme.html">About me</a></li>
                 <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
@@ -80,8 +95,8 @@
         <header class="collection-header">
             <h1>PanPan Project</h1>
             <h3>Project type: Logotype design</h3>
-            <p class="collection-description">PAN PAN is the name of my imaginary café shop project. 
-                I designed this series of logotypes as part of a collection under the PAN PAN concept. 
+            <p class="collection-description">PAN PAN is the name of my imaginary café shop project.
+                I designed this series of logotypes as part of a collection under the PAN PAN concept.
                 Come and explore my logotype designs!
             </p>
         </header>
@@ -93,79 +108,85 @@
                 <img src="images/pappan1.png" alt="The bread on top" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">The bread on top</h2>
                 <p class="item-description">
-                    This is the first image I created from my sketches after imagining owning a coffee shop. 
-                    I envisioned soft bread and hot drinks, which inspired me to create several similar sketches.</p>
+                    This is the first image I created from my sketches after imagining owning a coffee shop.
+                    I envisioned soft bread and hot drinks, which inspired me to create several similar sketches.
+                </p>
             </article>
 
             <article class="gallery-item">
                 <img src="images/pappan2.png" alt="A pretty cup" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">A pretty cup</h2>
                 <p class="item-description">
-                    This image was brought to life entirely in vector format, combining the tools of Adobe Illustrator and Ibis Paint. 
-                    While Adobe Illustrator is powerful, I found its color tools challenging to use. 
-                    That's where Ibis Paint came to the rescue! Its intuitive and beginner-friendly features made coloring a breeze, 
-                    helping me turn my vision into reality with ease and joy. Balancing the strengths of these two tools made the process not only manageable 
-                    but also exciting as I saw the artwork take shape.</p>
+                    This image was brought to life entirely in vector format, combining the tools of Adobe Illustrator and Ibis Paint.
+                    While Adobe Illustrator is powerful, I found its color tools challenging to use.
+                    That's where Ibis Paint came to the rescue! Its intuitive and beginner-friendly features made coloring a breeze,
+                    helping me turn my vision into reality with ease and joy. Balancing the strengths of these two tools made the process not only manageable
+                    but also exciting as I saw the artwork take shape.
+                </p>
             </article>
 
             <article class="gallery-item">
                 <img src="images/pappan3.png" alt="Pan Pan Project" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Pan Pan Project</h2>
                 <p class="item-description">
-                    PanPan is a name inspired by the Japanese word for bread, 'パン' (pan), reflecting my dream of owning a coffee shop. 
-                    The vision centers around offering delicious Japanese-style bread as the main attraction, 
-                    creating a cozy and unique experience for customers.</p>
+                    PanPan is a name inspired by the Japanese word for bread, 'パン' (pan), reflecting my dream of owning a coffee shop.
+                    The vision centers around offering delicious Japanese-style bread as the main attraction,
+                    creating a cozy and unique experience for customers.
+                </p>
             </article>
 
             <article class="gallery-item">
                 <img src="images/pappan4.png" alt="PanPan in another version" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in another version</h2>
                 <p class="item-description">
-                    I have a deep fondness for Japanese culture, which greatly inspired the PanPan project. 
-                    When envisioning this concept, I wanted a logo that truly captured Japan's identity. 
-                    I imagined animal-shaped bread as a playful representation and transformed that idea into a logo. </p>
+                    I have a deep fondness for Japanese culture, which greatly inspired the PanPan project.
+                    When envisioning this concept, I wanted a logo that truly captured Japan's identity.
+                    I imagined animal-shaped bread as a playful representation and transformed that idea into a logo.
+                </p>
             </article>
-            
+
             <article class="gallery-item">
                 <img src="images/pappan5.png" alt="PanPan in rabbit version" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in rabbit version</h2>
                 <p class="item-description">
-                    This version was inspired by an animation about a white talking bear who owned a coffee shop in the North Pole. 
-                    So, why did I choose a white rabbit instead of the bear from the animation? The answer lies in the personality I envisioned. 
-                    I thought of the hardworking nature of a worker ant but wanted something fluffy and 
-                    adorable like a polar bear—just not as giant or intimidating. As I considered dogs, cats, and hamsters, 
-                    the white rabbit stole my heart and became the perfect choice. </p>
+                    This version was inspired by an animation about a white talking bear who owned a coffee shop in the North Pole.
+                    So, why did I choose a white rabbit instead of the bear from the animation? The answer lies in the personality I envisioned.
+                    I thought of the hardworking nature of a worker ant but wanted something fluffy and
+                    adorable like a polar bear—just not as giant or intimidating. As I considered dogs, cats, and hamsters,
+                    the white rabbit stole my heart and became the perfect choice.
+                </p>
             </article>
 
             <article class="gallery-item">
                 <img src="images/pappan6.png" alt="PanPan in Different Versions" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">PanPan in Different Versions:</h2>
                 <p class="item-description">
-                    This picture marks the starting point of the PanPan project. When I imagined a cartoon featuring a cute, 
-                    living bread character, I began sketching countless ideas and experimenting with a drawing program to bring them to life. 
-                    This image serves as a collection of PanPan in various versions, giving you a glimpse of how the concept evolved. </p>
+                    This picture marks the starting point of the PanPan project. When I imagined a cartoon featuring a cute,
+                    living bread character, I began sketching countless ideas and experimenting with a drawing program to bring them to life.
+                    This image serves as a collection of PanPan in various versions, giving you a glimpse of how the concept evolved.
+                </p>
             </article>
             <!-- Lägg till fler objekt efter behov -->
         </section>
     </main>
 
     <!-- Footer börjar -->
-<footer class="album-footer">
-    <!-- Kontaktinformation -->
-    <div class="contact-info">
-        <p>Contact us:</p>
-        <ul>
-            <li><a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
-        </ul>
-    </div>
+    <footer class="album-footer">
+        <!-- Kontaktinformation -->
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <ul>
+                <li><a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gmail.com</a></li>
+                <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            </ul>
+        </div>
 
-    <!-- Copyright-information -->
-    <div class="copyright">
-        <p>&copy; 2025 Vickygalleria. All rights reserved.</p>
-    </div>
-</footer>
+        <!-- Copyright-information -->
+        <div class="copyright">
+            <p>&copy; 2025 Vickygalleria. All rights reserved.</p>
+        </div>
+    </footer>
     <!-- Footer slutar -->
 
     <!-- Länk till JavaScript-fil för interaktivitet -->
@@ -174,9 +195,44 @@
     <script src="album_search.js"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,th,sv'
+            }, 'google_translate_element');
         }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function restrictLanguages() {
+            const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
+            const allowedLanguages = ['English', 'Swedish', 'Thai'];
+
+            if (languageOptions.length === 0) {
+                console.warn("Dropdown elements not loaded yet. Retrying...");
+                setTimeout(restrictLanguages, 500); // Försök igen efter 500ms
+                return;
+            }
+
+            languageOptions.forEach(option => {
+                const languageText = option.innerText or option.textContent;
+                if (!allowedLanguages includes(languageText)) {
+                    option.closest('.goog-te-menu2-item').style.display = 'none';
+                }
+            });
+
+            const selectBar = document.querySelector('.goog-te-combo');
+            if (selectBar) {
+                selectBar.value = 'en'; // Tvinga språkmenyn till engelska
+                const event = new Event('change');
+                selectBar.dispatchEvent(event);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                restrictLanguages();
+            }, 1500); // Vänta tills widgeten är helt laddad
+        });
+    </script>
 </body>
 </html>
