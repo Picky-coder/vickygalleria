@@ -11,9 +11,40 @@
     <!-- Länk till album-specifika stilar -->
     <link rel="stylesheet" href="album_fotter.css">
     <link rel="stylesheet" href="modal_styles.css">
-
-    <!-- Internal CSS för sid-specifika justeringar -->
     <style>
+        /* Justering av sökfält och Google Translate-widget */
+        .search-bar {
+            height: 30px; /* Gör sökfältet lite mindre */
+            border-radius: 5px; /* Rundade hörn */
+        }
+
+        #google_translate_element {
+            transform: scale(0.8); /* Gör widgeten mindre */
+            transform-origin: right top; /* Håll den justerad till höger */
+        }
+
+        .search-translate {
+            display: flex;
+            justify-content: flex-end; /* Justera elementen till höger */
+            align-items: center;
+            gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
+        }
+
+        /* ซ่อนโลโก้ Google Translate */
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        /* ซ่อน footer ของ widget */
+        .goog-te-gadget {
+            font-size: 0 !important;
+        }
+
+        /* ปรับแต่งขนาดของแถบเมนู */
+        #google_translate_element {
+            margin-top: 10px;
+        }
+
         /* Justeringar för Stickers-galleriet */
         .collection-gallery {
             display: grid;
@@ -50,12 +81,13 @@
                 <img src="images/album_logo.jpg" alt="Logo" class="logo-img">
                 <a href="index.html" class="logo-name">VickyGalleria by Vimolman Nilsson</a>
             </div>
-           <!-- Sökfält och Google Translate språkval -->
-       <div class="search-translate">
-        <input type="text" placeholder="Search..." class="search-bar">
-        <div id="google_translate_element"></div>
-    </div>
-</div>
+
+            <!-- Sökfält och Google Translate språkval -->
+            <div class="search-translate">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
 
         <nav>
             <ul class="nav-links">
@@ -74,7 +106,7 @@
             <h1>Stickers</h1>
             <h3>Project type: Graphic Design</h3>
             <p class="collection-description">
-                I drew characters from translations and depicted them in cute, cartoon-like poses and with various emotions. 
+                I drew characters from translations and depicted them in cute, cartoon-like poses and with various emotions.
                 Let's see which manga or manhwa they are from.
             </p>
         </header>
@@ -86,8 +118,8 @@
                 <img src="images/sticker1.png" alt="Leoniar is feeling shy" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Leoniar is feeling shy</h2>
                 <p class="item-description">
-                    This is my favorite character from the manhwa titled "I Became the Male Lead's Adopted Daughter." 
-                    Her name is Leoniar Boleoti, the adopted daughter of Philio Boleoti, the grand duke of the Boleoti duchy. 
+                    This is my favorite character from the manhwa titled "I Became the Male Lead's Adopted Daughter."
+                    Her name is Leoniar Boleoti, the adopted daughter of Philio Boleoti, the grand duke of the Boleoti duchy.
                     I absolutely adore her for all her cute and endearing reactions, which have been a big inspiration for this project.
                 </p>
             </article>
@@ -96,7 +128,7 @@
                 <img src="images/sticker2.png" alt="Leoniar is thinking" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Leoniar is thinking</h2>
                 <p class="item-description">
-                    In fact, she has a thoughtful personality because she retains memories from her previous life as an adult. 
+                    In fact, she has a thoughtful personality because she retains memories from her previous life as an adult.
                     I find her thoughtfulness incredibly endearing and cute.
                 </p>
             </article>
@@ -105,7 +137,7 @@
                 <img src="images/sticker3.png" alt="Leoniar is deep in thought, imagining something wonderful" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Leoniar is deep in thought, imagining something wonderful</h2>
                 <p class="item-description">
-                    The manhwa features many scenes where she has moments of realization, like 'Ahhh, 
+                    The manhwa features many scenes where she has moments of realization, like 'Ahhh,
                     I finally figured it out!' I absolutely love it when she shows this reaction.
                 </p>
             </article>
@@ -122,16 +154,16 @@
                 <img src="images/sticker5.png" alt="Oops! Version" onerror="this.src='images/default-image.png';">
                 <h2 class="item-title">Oops! Version</h2>
                 <p class="item-description">
-                    Perhaps because she retains memories from her past life as an adult, whenever she does something wrong 
+                    Perhaps because she retains memories from her past life as an adult, whenever she does something wrong
                     or is caught off guard, she reacts like this.
                 </p>
             </article>
 
             <article class="gallery-item">
                 <img src="images/sticker6.png" alt="Leoniar hides her joy while trying to cover up a mistake" onerror="this.src='images/default-image.png';">
-                <h2 class="item-title">Leoniar hides her joy while trying to cover up a misstake</h2>
+                <h2 class="item-title">Leoniar hides her joy while trying to cover up a mistake</h2>
                 <p class="item-description">
-                    I love how she often unintentionally behaves in ways a typical six-year-old wouldn't, due to her memories from her adult life. 
+                    I love how she often unintentionally behaves in ways a typical six-year-old wouldn't, due to her memories from her adult life.
                     There are so many delightful scenes where she tries to mask her joy after accidentally doing something uncharacteristic of a child.
                 </p>
             </article>
@@ -145,7 +177,7 @@
             <p>Contact us:</p>
             <ul>
                 <li><a href="mailto:vickygalleria1423@gmail.com">vickygalleria1423@gmail.com</a></li>
-                <li><a href="https://instagram.com/vickygalleria/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://instagram.com/vickygalleria" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href="https://vickygalleria1423.wixsite.com/my-site-1/blog" target="_blank" rel="noopener noreferrer">Blog</a></li>
             </ul>
         </div>
@@ -162,9 +194,44 @@
     <script src="album_search.js"></script>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,th,sv'
+            }, 'google_translate_element');
         }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function restrictLanguages() {
+            const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
+            const allowedLanguages = ['English', 'Swedish', 'Thai'];
+
+            if (languageOptions.length === 0) {
+                console.warn("Dropdown elements not loaded yet. Retrying...");
+                setTimeout(restrictLanguages, 500); // Försök igen efter 500ms
+                return;
+            }
+
+            languageOptions.forEach(option => {
+                const languageText = option.innerText || option.textContent;
+                if (!allowedLanguages.includes(languageText)) {
+                    option.closest('.goog-te-menu2-item').style.display = 'none';
+                }
+            });
+
+            const selectBar = document.querySelector('.goog-te-combo');
+            if (selectBar) {
+                selectBar.value = 'en'; // Tvinga språkmenyn till engelska
+                const event = new Event('change');
+                selectBar.dispatchEvent(event);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                restrictLanguages();
+            }, 1500); // Vänta tills widgeten är helt laddad
+        });
+    </script>
 </body>
 </html>
