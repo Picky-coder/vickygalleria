@@ -27,6 +27,21 @@
             align-items: center;
             gap: 10px; /* Ge lite avstånd mellan sökfältet och widgeten */
         }
+
+    /* ซ่อนโลโก้ Google Translate */
+    .goog-logo-link {
+        display: none !important;
+    }
+
+    /* ซ่อน footer ของ widget */
+    .goog-te-gadget {
+        font-size: 0 !important;
+    }
+
+    /* ปรับแต่งขนาดของแถบเมนู */
+    #google_translate_element {
+        margin-top: 10px;
+    }
     </style>
 </head>
 
@@ -125,16 +140,46 @@
     <script src="gallery.js"></script>
     <script src="search.js"></script>
     <!-- Google Translate Widget -->
+<!-- Google Translate Widget -->
 <div id="google_translate_element"></div>
+
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,th,sv'
+            pageLanguage: 'en', // กำหนดให้ภาษาหลักของเว็บไซต์เป็นภาษาอังกฤษ
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
     }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Script to fix language select and limit languages -->
+<script>
+    function restrictLanguages() {
+        const languageOptions = document.querySelectorAll('.goog-te-menu2-item span.text');
+        const allowedLanguages = ['English', 'Swedish', 'Thai']; // ภาษาที่อนุญาตให้เลือก
+
+        languageOptions.forEach(option => {
+            const languageText = option.innerText || option.textContent;
+            if (!allowedLanguages.includes(languageText)) {
+                option.closest('.goog-te-menu2-item').style.display = 'none'; // ซ่อนภาษาอื่น
+            }
+        });
+
+        // แก้ไขให้แถบเมนูอยู่เป็นภาษาอังกฤษเสมอ
+        const selectBar = document.querySelector('.goog-te-combo');
+        if (selectBar) {
+            selectBar.setAttribute('lang', 'en'); // กำหนดแถบเมนูเป็นภาษาอังกฤษ
+        }
+    }
+
+    // รันฟังก์ชันหลังจาก widget โหลดเสร็จ
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(restrictLanguages, 1000); // รอให้ widget โหลดเสร็จก่อน
+    });
+</script>
+
+
 
 </body>
 </html>
