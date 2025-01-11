@@ -143,7 +143,7 @@
 <!-- Google Translate Widget -->
 <div id="google_translate_element"></div>
 
-<!-- Scripts Google translate funktion-->
+<!-- Google Translate Widget -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -167,25 +167,16 @@
 
             const selectBar = document.querySelector('.goog-te-combo');
             if (selectBar) {
-                selectBar.setAttribute('lang', 'en');
+                selectBar.setAttribute('lang', 'en'); // foce language 
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 restrictLanguages();
-                forceLanguageToEnglish(); // foce for language 
-            }, 1500);
+            }, 1500); // loading widget
         });
-
-        function forceLanguageToEnglish() {
-            const selectBar = document.querySelector('.goog-te-combo');
-            if (selectBar) {
-                selectBar.setAttribute('lang', 'en');
-            }
-        }
     </script>
-
 
 
 </body>
